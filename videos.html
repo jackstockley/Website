@@ -3,50 +3,29 @@
   <head>
     <meta charset="utf-8">
     <title>TheExtremeNerd - YouTube Videos</title>
-	<style>
-		.dropdown {
-			position: relative;
-			display: inline-block;
-		}
-
-		.dropdown-content {
-			display: none;
-			position: absolute;
-			background-color: #f9f9f9;
-			min-width: 160px;
-			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-			padding: 12px 16px;
-		}
-
-		.dropdown:hover .dropdown-content {
-			display: block;
-		}
-	</style>
-	<div class="menu">
-			<ul>
-				<a href="index.html"><li id="topNav">Home</li></a>
-				<a href="whats-new.html"><li>What`s New</li></a>
-				<div class="dropdown">
-					<li>Social Accounts</li>
-					<div class="dropdown-content">
-						<p onclick="location.href='https://twitter.com/theextremenerd'">Twitter</p>
-						<p onclick="location.href='https://www.instagram.com/theextremenerd/'">Instagram</p>
-						<p onclick="location.href='https://www.youtube.com/channel/UCg5AlQoyjd7q_q373sE6dTg'">YouTube</p>
-					</div>
-				</div>
-				<a href="videos.html"><li>Videos</li></a>
-				<div class="dropdown">
-					<li>Downloads</li>
-					<div class="dropdown-content">
-						<p onclick="location.href='test'">Download 1</p>
-						<p onclick="location.href='test'">Download 2</p>
-						<p onclick="location.href='test'">Download 3</p>
-					</div>
-				</div>
-				<a href="blog.html"><li>Blog</li></a>
-				<a href="beam.html"><li>Beam</li></a>
-				<a href="bug-reporter.html"><li>Bug Reporter</li></a>
-			</ul>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<ul>
+		<li><a href="index.html">Home</a></li>
+		<li><a href="whats-new.html">What`s New</a></li>
+		<li class="dropdown">
+		<a href="#" class="dropbtn">Social Accounts</a>
+		<div class="dropdown-content">
+			<a href="https://twitter.com/theextremenerd">Twitter</a>
+			<a href="https://www.instagram.com/theextremenerd/">Instagram</a>
+			<a href="https://www.youtube.com/channel/UCg5AlQoyjd7q_q373sE6dTg">YouTube</a>
+		<li><a href="videos.html">Videos</a></li>
+		<li class="dropdown">
+		<a href="#" class="dropbtn">Downloads</a>
+			<div class="dropdown-content">
+			<a href="#">Download 1</a>
+			<a href="#">Download 2</a>
+			<a href="#">Download 3</a>
+		<li><a href="blog.html">Blog</a></li>
+		<li><a href="beam.html">Beam</a></li>
+		<li><a href="bug-reporter.html">Bug Reporter</a></li>
+		</div>
+		</li>
+	</ul>
     <link rel="canonical" href="https://9ebd5ed9d0ce57f0ab8529046f3f1c27a9a30b89.googledrive.com/host/0B8K8uhFcgzKVRko3QVJpTjVVeFE/Home-index.html" />
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
     <script type="application/ld+json">
@@ -66,15 +45,16 @@
 <body id="body">
 	<h1 id="Main">My YouTube Videos</h1>
 	<h1 id="SubText">My latest YouTube Video</h1>
-	<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=UUg5AlQoyjd7q_q373sE6dTg" frameborder="0" allowfullscreen></iframe>
+	<iframe id="yt" width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=UUg5AlQoyjd7q_q373sE6dTg" frameborder="0" allowfullscreen></iframe>
 	<h1 id="SubText">My YouTube Siries</h1>
+	<hr/>
 	<p id="siries-name">Let`s Create</p>
-	<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLGdekFN2bWly9Szjq_XQJbczXWRoFv8Af" frameborder="0" allowfullscreen></iframe>
+	<iframe id="yt" width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLGdekFN2bWly9Szjq_XQJbczXWRoFv8Af" frameborder="0" allowfullscreen></iframe>
 	<p id="siries-name">What`s in my Computer</p>
-	<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLGdekFN2bWlzdXS0aQgWkJdlQ-VPbkHda" frameborder="0" allowfullscreen></iframe>
+	<iframe id="yt" width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLGdekFN2bWlzdXS0aQgWkJdlQ-VPbkHda" frameborder="0" allowfullscreen></iframe>
 	<p id="siries-name">News & Updates</p>
-	<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLGdekFN2bWlzQCQrean2_Zltpffj5QWsh" frameborder="0" allowfullscreen></iframe>
+	<iframe id="yt" width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLGdekFN2bWlzQCQrean2_Zltpffj5QWsh" frameborder="0" allowfullscreen></iframe>
 	<p id="siries-name">Tutorials</p>
-	<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLGdekFN2bWlxEWW2F_v6Sg-OjaRDJ_foU" frameborder="0" allowfullscreen></iframe>
+	<iframe id="yt" width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLGdekFN2bWlxEWW2F_v6Sg-OjaRDJ_foU" frameborder="0" allowfullscreen></iframe>
 </body>
 </html>
